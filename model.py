@@ -12,5 +12,4 @@ def classify(a, b, c, d):
     client_input = np.array([[a, b, c, d]])   # Convert to numpy array
     iris_pred = multi_model.predict(client_input)[0]   # Retrieve from dictionary
     prediction = 'Predicted class is ' + iris_classes[iris_pred]
-    # print(prediction)
     return prediction   # Return the prediction
