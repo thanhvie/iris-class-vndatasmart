@@ -1,4 +1,4 @@
-import model  # Import the python file containing the ML model
+from model import model  # Import the python file containing the ML model
 from flask import Flask, request, render_template  # Import flask libraries
 
 # Initialize the flask class and specify the templates directory
@@ -16,13 +16,13 @@ def home():
 def classify_type():
     try:
         # Get parameters for sepal length
-        sepal_len = request.args.get('sepal_length')
+        sepal_len = float(request.args.get('sepal_length'))
         # Get parameters for sepal width
-        sepal_wid = request.args.get('sepal_width')
+        sepal_wid = float(request.args.get('sepal_width'))
         # Get parameters for petal length
-        petal_len = request.args.get('petal_length')
+        petal_len = float(request.args.get('petal_length'))
         # Get parameters for petal width
-        petal_wid = request.args.get('petal_width')
+        petal_wid = float(request.args.get('petal_width'))
 
         # Get the output from the classification model
         variety = model.classify(sepal_len, sepal_wid, petal_len, petal_wid)

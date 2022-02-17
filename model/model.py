@@ -3,7 +3,7 @@ import joblib
 
 iris_classes = ['Setosa', 'Versicolor', 'Virginica']
 
-filename = 'iris_model.pkl'
+filename = 'model/iris_model.pkl'
 multi_model = joblib.load(filename)
 
 
