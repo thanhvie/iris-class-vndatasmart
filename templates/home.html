@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Iris Flower Classification</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
-	<!ink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        html{
-            overflow: hidden;
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flowers Classification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css">
+    <!ink href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            html {
+                overflow: hidden;
+            }
 
-        body{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+            body {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
 
-        #login-form-container{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
-</head>	
+            #login-form-container {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+</head>
+
 <body>
     <div id="login-form-container">
         <form action="classify" method="GET">
             <div class="card" style="width: 400px">
-            <div class="card-content">
-                <div class="media">
-                <div class="is-size-4 has-text-centered">Iris Flower Classification</div>
-                </div>
-                <div class="content">
+                <div class="card-content">
+                    <div class="media">
+                        <div class="is-size-4 has-text-centered">Iris Flower Classification</div>
+                    </div>
+                    <div class="content">
 
-                <div class="field">
-                    <p class="control">
-                    Sepal Length: <input class="input" type="number" value='0.00' step='0.01' name="sepal_length" id="slen">
-                    </p>
-                </div>
+                        <div class="field">
+                            <p class="control">
+                                Sepal Length: <input class="input" type="number" value='0.00' step='0.01'
+                                    name="sepal_length" id="slen">
+                            </p>
+                        </div>
 
-                <div class="field">
-                    <p class="control">
-                    Sepal Width: <input class="input" type="number" value='0.00' step='0.01' name="sepal_width" id="swid">
-                    </p>
-                </div>
+                        <div class="field">
+                            <p class="control">
+                                Sepal Width: <input class="input" type="number" value='0.00' step='0.01'
+                                    name="sepal_width" id="swid">
+                            </p>
+                        </div>
 
-                <div class="field">
-                    <p class="control">
-                    Petal Length: <input class="input" type="number" value='0.00' step='0.01' name="petal_length" id="plen">
-                    </p>
-                </div>
+                        <div class="field">
+                            <p class="control">
+                                Petal Length: <input class="input" type="number" value='0.00' step='0.01'
+                                    name="petal_length" id="plen">
+                            </p>
+                        </div>
 
-                <div class="field">
-                    <p class="control">
-                    Petal Width: <input class="input" type="number" value='0.00' step='0.01' name="petal_width" id="pwid">
-                    </p>
+                        <div class="field">
+                            <p class="control">
+                                Petal Width: <input class="input" type="number" value='0.00' step='0.01'
+                                    name="petal_width" id="pwid">
+                            </p>
+                        </div>
+
+                        <div class="field">
+                            <button class="button is-fullwidth is-rounded is-primary">Submit</button>
+                        </div>
+                    </div>
                 </div>
-            
-                <div class="field">
-                    <button class="button is-fullwidth is-rounded is-primary">Submit</button>
-                </div>
-                </div>
-            </div>
         </form>
         <footer class="footer">
             <div class="content has-text-centered">
-              <p>
-                <strong>All rights reserved</strong> by <a href="https://thanhvie.com">thanhvie.com</a>.
-              </p>
+                <p>
+                    <strong>All rights reserved</strong> by <a href="https://thanhvie.com">thanhvie.com</a>.
+                </p>
             </div>
-          </footer>
+        </footer>
     </div>
 
 
 </body>
+
 </html>
