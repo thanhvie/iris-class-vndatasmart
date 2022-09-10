@@ -1,18 +1,19 @@
+from email.mime import application
 from model import model  # Import the python file containing the ML model
 from flask import Flask, request, render_template  # Import flask libraries
 
 # Initialize the flask class and specify the templates directory
-app = Flask(__name__, template_folder="templates")
+application = Flask(__name__, template_folder="templates")
 
 
 # Default route set as 'home'
-@app.route('/')
+@application.route('/')
 def home():
     return render_template('home.html')  # Render home.html
 
 
 # Route 'classify' accepts GET request
-@app.route('/classify', methods=['POST', 'GET'])
+@application.route('/classify', methods=['POST', 'GET'])
 def classify_type():
     try:
         # Get parameters for sepal length
@@ -35,4 +36,4 @@ def classify_type():
 
 # Run the Flask server
 if(__name__ == '__main__'):
-    app.run(host="0.0.0.0")
+    application.run(host="0.0.0.0")
