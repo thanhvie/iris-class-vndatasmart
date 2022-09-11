@@ -26,3 +26,6 @@ docker-compose up
 
 ## You can also check in the app at link below
 https://iris-class-vndatasmart.herokuapp.com/
+
+#### feature/aws-200
+This branch is setup to run with AWS Elastic Beanstalk
