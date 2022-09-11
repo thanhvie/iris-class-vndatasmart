@@ -5,7 +5,7 @@ from flask import Flask, request, render_template  # Import flask libraries
 app = Flask(__name__, template_folder="templates")
 
 
-# Default route set as 'home'
+# Default route set as  'home'
 @app.route('/')
 def home():
     return render_template('home.html')  # Render home.html
